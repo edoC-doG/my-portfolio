@@ -1,0 +1,33 @@
+html {
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+/*=============== VARIABLES CSS ===============*/
+:root{
+    --bg-color:#0c0c1d;
+    /*====== Text CSS =======*/
+    --text-desc-color:lightgray;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+}
+
+body {
+    background-color: var(--bg-color) ;
+    color: var(--text-desc-color);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+section {
+    height: 100vh;
+    scroll-snap-align: center;
+}
