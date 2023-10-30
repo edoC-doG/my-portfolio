@@ -30,7 +30,7 @@ const Services = () => {
       ref={ref}
       animate= {isInView && "animate"}
     >
-        <motion.div className="text-container" variants={variants}>
+        <motion.div className="textContainer" variants={variants}>
           <p>
             I focus on helping your brand grow
             <br /> and move forward
@@ -38,7 +38,7 @@ const Services = () => {
           <hr />
         </motion.div>
         <motion.div
-          className="title-container"
+          className="titleContainer"
           variants={variants}
           initial="initial"
           animate="animate"
@@ -56,7 +56,7 @@ const Services = () => {
             <button>WHAT WE DO ?</button>
           </div>
         </motion.div>
-      <motion.div className="list-container" variants={variants}>
+      <motion.div className="listContainer" variants={variants}>
         <motion.div
           className="box"
           whileHover={{ background: "lightgray", color: "black" }}
