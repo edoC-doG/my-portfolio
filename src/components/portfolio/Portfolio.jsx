@@ -8,22 +8,26 @@ const items = [
     title: "JBL Landing Page",
     img: "jbl.jpg",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+    href: "https://jbl-beta.vercel.app/",
   },
   {
     id: 2,
     title: "Nike E-commerce",
     img: "nike.jpg",
+    href: "#!",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
   },
   {
     id: 3,
-    title: "Vanilla JS App",
+    title: "Gear VN Shop",
+    href: "#!",
     img: "https://images.pexels.com/photos/6894528/pexels-photo-6894528.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
   },
   {
     id: 4,
-    title: "Music App",
+    title: "Zing MP3",
+    href: "#!",
     img: "https://images.pexels.com/photos/18540208/pexels-photo-18540208/free-photo-of-wood-landscape-water-hill.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
   },
@@ -39,16 +43,26 @@ const Single = ({ item }) => {
   const y = useTransform(scrollYProgress, [0, 1], [-300, 300]);
 
   return (
-    <section >
+    <section>
       <div className="container">
         <div className="wrapper">
           <div className="imageContainer" ref={ref}>
             <img src={item.img} alt="" />
           </div>
-          <motion.div className="textContainer" style={{y}}>
+          <motion.div className="textContainer" style={{ y }}>
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
-            <button>See Demo</button>
+            {item.href === "#!" ? (
+              <motion.button whileHover={{ opacity: 0.6, scale: 1.1 }}>
+                Coming Soon
+              </motion.button>
+            ) : (
+              <a href={`${item.href}`} target="_blank" rel="noreferrer">
+                <motion.button whileHover={{ opacity: 0.6, scale: 1.1 }}>
+                  See Demo
+                </motion.button>
+              </a>
+            )}
           </motion.div>
         </div>
       </div>

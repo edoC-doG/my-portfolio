@@ -15,18 +15,18 @@ const Navbar = () => {
         >
         </motion.span>
         <div className="socials">
-          <a href="#!">
+          <motion.a href="https://www.facebook.com" whileHover={{scale:1.2}}>
             <img src="/facebook.png" alt="" />
-          </a>
-          <a href="#!">
+          </motion.a>
+          <motion.a href="https://www.instagram.com/" whileHover={{scale:1.2}}>
             <img src="/instagram.png" alt="" />
-          </a>
-          <a href="#!">
+          </motion.a>
+          <motion.a href="https://www.youtube.com/" whileHover={{scale:1.2}}>
             <img src="/youtube.png" alt="" />
-          </a>
-          <a href="#!">
+          </motion.a>
+          <motion.a href="https://dribbble.com/" whileHover={{scale:1.2}}>
             <img src="/dribbble.png" alt="" />
-          </a>
+          </motion.a>
         </div>
       </div>
     </div>

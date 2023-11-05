@@ -51,11 +51,15 @@ const Hero = () => {
           <motion.h1 variants={textVariants}>
             Software Engineering
           </motion.h1>
-          <motion.div variants={textVariants} className="buttons">
-            <motion.button variants={textVariants}>
+          <motion.div variants={textVariants} style={{zIndex:2}} className="buttons">
+          <a href="#!" style={{display:"inline-block"}}>
+          <motion.button variants={textVariants} whileHover={{ background: "white", color:"black" }}>
               See the Latest Works
             </motion.button>
-            <motion.button variants={textVariants}>Contact Me</motion.button>
+          </a>
+         <a href="#Contact" style={{display:"inline-block"}}>
+         <motion.button variants={textVariants} whileHover={{ background: "white", color:"black" }}>Contact Me</motion.button>
+         </a>
           </motion.div>
           <motion.img
             variants={textVariants}
@@ -68,6 +72,7 @@ const Hero = () => {
       <motion.div
         className="slidingTextContainer"
         variants={sliderVariants}
+        style={{zIndex:1}}
         initial="initial"
         animate="animate"
       >

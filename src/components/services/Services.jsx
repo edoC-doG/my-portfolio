@@ -53,7 +53,7 @@ const Services = () => {
             <h1>
               <motion.b whileHover={{color:"orange"}}>For you</motion.b> Business.
             </h1>
-            <button>WHAT WE DO ?</button>
+            <motion.button whileHover={{ opacity:0.6, scale:1.1 }}>WHAT WE DO ?</motion.button>
           </div>
         </motion.div>
       <motion.div className="listContainer" variants={variants}>
@@ -68,7 +68,7 @@ const Services = () => {
             to ensure that the software meets the needs and preferences of the
             target audience.
           </p>
-          <button>Go</button>
+          <motion.button whileHover={{ opacity:0.6, scale:1.1 }}>Go</motion.button>
         </motion.div>
         <motion.div
           className="box"
@@ -81,7 +81,7 @@ const Services = () => {
             cutting-edge technologies and creative design elements to make the
             software stand out.
           </p>
-          <button>Go</button>
+          <motion.button whileHover={{ opacity:0.6, scale:1.1 }}>Go</motion.button>
         </motion.div>
         <motion.div
           className="box"
@@ -94,7 +94,7 @@ const Services = () => {
             software is adaptable to technological advancements and can
             integrate with other systems or platforms seamlessly.
           </p>
-          <button>Go</button>
+          <motion.button whileHover={{ opacity:0.6, scale:1.1 }}>Go</motion.button>
         </motion.div>
         <motion.div
           className="box"
@@ -107,7 +107,7 @@ const Services = () => {
             measures and regulatory requirements to ensure compliance with
             industry standards and data protection laws.
           </p>
-          <button>Go</button>
+          <motion.button whileHover={{ opacity:0.6, scale:1.1 }}>Go</motion.button>
         </motion.div>
       </motion.div>
     </motion.div>
