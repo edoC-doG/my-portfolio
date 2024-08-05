@@ -13,20 +13,23 @@ const Navbar = () => {
           transition={{ duration: 0.5 }}
         ></motion.span>
         <div className="socials">
-          <motion.a href="https://www.facebook.com" whileHover={{ scale: 1.2 }}>
-            <img src="/facebook.png" alt="" />
+          <motion.a
+            href="https://www.facebook.com/longnmse"
+            whileHover={{ scale: 1.2 }}
+          >
+            <img src="/facebook.png" alt="" title="facebook" />
           </motion.a>
           <motion.a
             href="https://github.com/edoC-doG"
             whileHover={{ scale: 1.2 }}
           >
-            <img src="/github-1.png" alt="" />
+            <img src="/github.svg" alt="" title="github" />
           </motion.a>
           <motion.a
-            href="https://www.linkedin.com/in/minh-long-730213257/"
+            href="https://www.linkedin.com/longnmse/"
             whileHover={{ scale: 1.2 }}
           >
-            <img src="/link-1.webp" alt="" />
+            <img src="/linked.svg" alt="" />
           </motion.a>
           <motion.a href="https://dribbble.com/" whileHover={{ scale: 1.2 }}>
             <img src="/dribbble.png" alt="" />
